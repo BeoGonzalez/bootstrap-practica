@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- BARRA NAV -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Mi sitio</a>
+            <button class="navbar-toggler type="button" data-bs-toggle="collapse" data-bs-target="#menu"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+     </nav>
+
+     <!--CONTENEDOR PRINCIPAL  -->
+     <div class="container my-5">
+        
+        <!-- CABECERA -->
+
+        <div class="text-center mb-5">
+            <h1 class="text-primary">Bienvenido a Bootstrap 5.3</h1>
+            <p class="lead">Este es un ejemplo de los componentes más utilizados de bootstrap</p>
+            <span class="badge bg-success">Versión educativa</span>
+        </div>
+
+        <!-- alertas -->
+        <div class="alert alert-warning text-center" role="alert">
+            Ten paciencia estamos aprendiendo a usar Bootstrap 5
+        </div>
+
+         <!-- Grid 3 columnas-->
+        <div class="row">
+            <!-- Columna 1 -->
+             <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="https://localo.com/es/assets/img/definitions/what-is-bootstrap.webp" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 1</h5>
+                        <p class="card-text">Descripción del proyecto 1</p>
+                        <a href="#" class="btn btn-outline-primary">Ver más</a>
+                    </div>
+                </div>
+             </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="https://localo.com/es/assets/img/definitions/what-is-bootstrap.webp" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 2</h5>
+                        <p class="card-text">Descripción del proyecto 2</p>
+                        <a href="#" class="btn btn-outline-danger">Ver más</a>
+                    </div>
+                </div>
+             </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="https://localo.com/es/assets/img/definitions/what-is-bootstrap.webp" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 3</h5>
+                        <p class="card-text">Descripción del proyecto 3</p>
+                        <a href="#" class="btn btn-outline-success">Ver más</a>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <!-- fin del row -->
+
+        <!-- tabla responsive -->
+         <h2 class="mt-5">Ranking de jugadores</h2>
+         <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>Jugador</th>
+                        <th>Puntaje</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Marcelo</td>
+                        <td>0</td>
+                        <td><span class="badge bg-success">Activo</span></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Byron</td>
+                        <td>4500</td>
+                        <td><span class="badge bg-warning">En pausa</span></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Nelson</td>
+                        <td>4500</td>
+                        <td><span class="badge bg-danger">Eliminado</span></td>
+                    </tr>
+                </tbody>
+            </table>
+         </div>
+
+        <!-- Formulario -->
+        <h2 class="mt-5">Formulario de contacto</h2>
+        <form action="" class="row g-3">
+            <div class="col-md-6">
+                <label for="" class="form-label">Nombre</label>
+                <input class="form-control" id="nombre" type="text" required>
+            </div>
+            <div class="col-md-6">
+                <label for="" class="form-label">Correo</label>
+                <input class="form-control" id="nombre" type="text" required>
+            </div>
+            <div class="col-md-12">
+                <label for="" class="form-label">Mensaje</label>
+                <textarea class="form-control" rows="5" name="" id="" required></textarea>
+            </div>
+
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Enviar formulario</button>
+            </div>
+        </form>
+
+
+     </div>
+             <!-- footer o pie de página -->
+        <footer class="bg-dark text-white text-center py-4 mt-5">
+            <p>&copy; 2025 Todos los derechos reservados a mí, yo mismo</p>
+        </footer>
+
+    <!-- DEBE IR SI O SI AL FINAL DEL BODY -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</body>
+</html>
